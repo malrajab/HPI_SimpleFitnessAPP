@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/gradient_background">
+
+        <EditText
+            style="@style/EditTextForRegPage"
+            android:id="@+id/reg_userName"
+            android:hint="@string/username_caption"/>
+        <EditText
+            style="@style/EditTextForRegPage"
+            android:id="@+id/reg_fname"
+            android:hint="@string/fname_caption"/>
+        <EditText
+            style="@style/EditTextForRegPage"
+            android:id="@+id/reg_sname"
+            android:hint="@string/sname_caption"/>
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+        <EditText
+            style="@style/EditTextForRegPage"
+            android:inputType="textEmailAddress"
+            android:id="@+id/reg_email"
+            android:hint="Enter your email"/>
+        <EditText
+            style="@style/EditTextForRegPage"
+            android:inputType="textEmailAddress"
+            android:id="@+id/reg_address"
+            android:hint="@string/reg_address"/>
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DOB:"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+            <EditText
+                style="@style/EditTextForRegPage"
+                android:hint="Enter Date of Birth"
+                android:id="@+id/Reg_Dob"
+                android:paddingLeft="10dp"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+        <EditText
+            android:inputType="textPassword"
+            style="@style/EditTextForRegPage"
+            android:id="@+id/Reg_pass1"
+            android:maxLength="6"
+            android:hint="@string/reg_enter_password"/>
+        <EditText
+            style="@style/EditTextForRegPage"
+            android:inputType="textPassword"
+            android:id="@+id/Reg_pass2"
+            android:maxLength="6"
+            android:hint="@string/reg_confirm_pass"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Reg"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Register"
+            android:backgroundTint="#0FFF"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nScreen"
+    android:background="@drawable/gradient_background"
+    tools:context="com.example.m_alrajab.hpi_simplefitnessapp.NotesFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="200sp"
+                android:id="@+id/notesEdit"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Add note"
+                android:id="@+id/btnAddNote"
+                android:backgroundTint="#0FFF"
+                android:layout_toRightOf="@+id/notesEdit"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:backgroundTint="#0FFF"
+                android:id="@+id/btnClear"
+                android:layout_toRightOf="@+id/btnAddNote"/>
+        </RelativeLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteList">
+
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout>

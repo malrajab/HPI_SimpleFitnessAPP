@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">HPI_SimpleFitnessAPP</string>
+    <string name="app_name">Simple Fitness HPI</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registration_page">Join us</string>
+    <string name="title_activity_landing_screen">Welcome to Simple Fitness</string>
+    <string name="title_activity_forgot_password_screen">Recover your password</string>
+    <string name="title_activity_forget_screen">Forget password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username_caption">Enter a username</string>
+    <string name="fname_caption">Enter your first name</string>
+    <string name="sname_caption">Enter family name</string>
+    <string name="reg_enter_password">Enter password</string>
+    <string name="reg_confirm_pass">Confirm  password</string>
+    <string name="reg_address">Office Addr: 8 Elm Rd, NY, 10940</string>
 </resources>
